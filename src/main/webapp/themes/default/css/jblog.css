@@ -1,0 +1,305 @@
+/*
+ * Globals
+ */
+.well {
+    box-shadow: 0;
+}
+
+ul.post-list {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav {
+    background-color: #222;
+    border: medium none;
+    border-radius: 0;
+    bottom: 0;
+    left: 225px;
+    margin-left: -225px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    position: fixed;
+    top: 51px;
+    width: 225px;
+}
+
+body {
+    padding-top: 50px;
+    font-family: Verdana, Arial, sans-serif;
+
+}
+
+a {
+    color: #0D7293;
+    text-decoration: none;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-weight: normal;
+    color: #333;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-box {
+    background-color: #F9F9F9;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.sidebar-box .header {
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.sidebar-box ul > li {
+    margin-bottom: 10px;
+}
+
+.sidebar-box ul > li a.post-title {
+}
+
+.sidebar-box > footer a {
+}
+
+.sidebar-inset p:last-child,
+.sidebar-inset ul:last-child,
+.sidebar-inset ol:last-child {
+    margin-bottom: 0;
+}
+
+.account-profile {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.account-profile dt {
+    color: #1786c6;
+    font-weight: bold;
+    text-align: right;
+    width: 145px;
+}
+
+.account-profile dd {
+    margin-left: 157px;
+}
+
+.account-profile dd.accounts {
+    color: red;
+}
+
+.account-profile dd.users > a.account {
+}
+
+.account-profile dd.blogs {
+    color: #0D7293;
+}
+
+.account-profile dd.blogs > a.blog {
+}
+
+.account-profile dd.date {
+}
+
+.account-profile dd.info {
+}
+
+/***************************   POST ***********************************/
+.posts {
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h1.title,
+.post h2.title {
+    margin: 0 0 7px;
+    padding: 0;
+    color: #0D7293;
+}
+
+.post .title > a {
+    color: #0D7293;
+}
+
+.post .title > a:hover {
+}
+
+.post .meta {
+    margin-bottom: 10px;
+    color: rgba(54, 150, 182, 0.74);
+}
+
+.post .meta a {
+    color: rgba(54, 150, 182, 0.74);
+}
+
+.post .meta .blogs a.blog-name {
+    color: #0D7288;
+}
+
+.post .date {
+    font-size: 12px;
+}
+
+.post .info ul {
+    border: 1px solid #ddd;
+    color: #0d7288;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.post .info ul li {
+    margin-left: 10px;
+}
+
+.post .info ul:last-child {
+    margin-left: 0;
+}
+
+.post .info a {
+    color: #0D7288;
+    font-size: 12px;
+}
+
+.post .content {
+}
+
+.page-header h1 {
+    font-size: 30px;
+}
+
+.accounts,
+.blogs {
+}
+
+.account,
+.blog {
+}
+
+.account-header-page,
+.blog-header-page,
+.search-header-page {
+    margin-bottom: 20px;
+    margin-top: 30px !important;
+}
+
+.account-header-page .info a,
+.blog-header-page .info a,
+.account .info a,
+.blog .info .a {
+}
+
+.account-header-page .title,
+.blog-header-page .title,
+.account .title,
+.blog .title {
+    font-size: 23px;
+    margin-bottom: 2px;
+}
+
+.account-header-page .stat,
+.blog-header-page .stat,
+.account .stat,
+.blog .stat {
+    font-size: 12px;
+    color: #555;
+}
+
+.account-header-page .rating,
+.blog-header-page .rating,
+.account .rating,
+.blog .rating {
+    font-size: 23px;
+    color: #0D7293;
+}
+
+/*
+ * Footer
+ */
+
+footer.page-footer {
+    padding: 20px 0;
+    color: #fff;
+    /*text-align: center;*/
+    background-color: #085A78;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 50px;
+}
+
+footer.page-footer p:last-child {
+    margin-bottom: 0;
+}
+
+footer.page-footer-bottom {
+    padding: 10px 0;
+    /*text-align: center;*/
+    background-color: #074E68;
+}
+
+/*********************************************/
+.account-menu,
+.blog-menu,
+.search-menu {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.account-menu .nav-pills > li > a,
+.blog-menu .nav-pills > li > a,
+.search-menu .nav-pills > li > a {
+    background-color: #F9F9F9
+}
+
+.account-menu .nav-pills > li > a:hover,
+.blog-menu .nav-pills > li > a:hover,
+.search-menu .nav-pills > li > a:hover {
+    background-color: #F6F3F3
+}
+
+.account-menu .navbar-inverse,
+.blog-menu .navbar-inverse,
+.search-menu .navbar-inverse {
+    background-color: #085A78;
+    border-color: #085A78;
+}
+
+.account-menu .nav-pills > li.active > a,
+.account-menu .nav-pills > li.active > a:hover,
+.account-menu .nav-pills > li.active > a:focus,
+.blog-menu .nav-pills > li.active > a,
+.blog-menu .nav-pills > li.active > a:hover,
+.blog-menu .nav-pills > li.active > a:focus,
+.search-menu .nav-pills > li.active > a,
+.search-menu .nav-pills > li.active > a:hover,
+.search-menu .nav-pills > li.active > a:focus {
+    color: #ffffff;
+    background-color: #085A78;
+}
+
+.account-menu .navbar-inverse .navbar-nav > li > a,
+.blog-menu .navbar-inverse .navbar-nav > li > a,
+.search-menu .navbar-inverse .navbar-nav > li > a {
+    color: #EFF5FF;
+}
+
+.account-menu .navbar-inverse .navbar-brand,
+.blog-menu .navbar-inverse .navbar-brand,
+.search-menu .navbar-inverse .navbar-brand {
+    color: #EFF5FF;
+}
+
+.media-right, .media > .pull-right {
+    padding-right: 20px;
+}
+

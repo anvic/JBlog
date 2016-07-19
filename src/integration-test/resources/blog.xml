@@ -1,0 +1,96 @@
+<!--
+  ~ Copyright 2016 Victor Andreenko
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<dataset>
+
+    <account id="1" name="name1" first_name="FirstName1" last_name="LstName1" date="2016-01-07 21:42:34"
+             email="name1@mail.com" role="ROLE_USER" version="0"
+             no_of_posts="0" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0"
+             no_of_rated_up="0" rating="0"/>
+    <account id="2" name="name2" first_name="FirstName2" last_name="LstName2" date="2016-01-07 21:42:34"
+             email="name2@mail.com" role="ROLE_USER" version="0"
+             no_of_posts="0" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0"
+             no_of_rated_up="0" rating="0"/>
+    <account id="3" name="name3" first_name="FirstName3" last_name="LstName3" date="2016-01-07 21:42:34"
+             email="name3@mail.com" role="ROLE_USER" version="0"
+             no_of_posts="0" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0"
+             no_of_rated_up="0" rating="0"/>
+
+    <account_relation id="1" account_id="1" item_id="2" version="0"/>
+    <account_relation id="2" account_id="1" item_id="3" version="0"/>
+    <account_relation id="3" account_id="2" item_id="1" version="0"/>
+
+    <blog id="1" description="Desc" name="blog1" url_name="blogUrl1" no_of_posts="0" account_id="1" version="0"
+          date="2016-01-07 21:42:34" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0" no_of_rated_up="0" rating="0"/>
+    <blog id="2" description="Desc" name="blog2" url_name="blogUrl2" no_of_posts="0" account_id="1" version="0"
+          date="2016-01-07 21:42:34" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0" no_of_rated_up="0" rating="0"/>
+    <blog id="3" description="Desc" name="blog3" url_name="blogUrl3" no_of_posts="0" account_id="1" version="0"
+          date="2016-01-07 21:42:34" no_of_subscribers="0" no_of_rated="0" no_of_rated_down="0" no_of_rated_up="0" rating="0"/>
+
+    <blog_relation id="1" account_id="1" item_id="1" version="0"/>
+    <blog_relation id="2" account_id="1" item_id="2" version="0"/>
+    <blog_relation id="3" account_id="2" item_id="2" version="0"/>
+
+    <post id="1" account_id="1" title="Post Title 1" text="Post Text 1" short_text="Post Text 1" rating="0" version="0"
+          date="2016-01-07 21:42:34" no_of_comments="0" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+          no_of_rated_up="0" no_of_views="0"/>
+
+    <post id="2" account_id="2" title="Post Title 2" text="Post Text 2" short_text="Post Text 2" rating="0" version="0"
+          date="2016-01-07 21:42:34" no_of_comments="0" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+          no_of_rated_up="0" no_of_views="0"/>
+
+    <post id="3" account_id="1" title="Post Title 3" text="Post Text 3" short_text="Post Text 3" rating="0" version="0"
+          date="2016-01-07 21:42:34" no_of_comments="0" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+          no_of_rated_up="0" no_of_views="0"/>
+
+
+    <JOIN_BLOG_POST blog_id="1" post_id="1"/>
+    <JOIN_BLOG_POST blog_id="2" post_id="1"/>
+    <JOIN_BLOG_POST blog_id="2" post_id="2"/>
+    <JOIN_BLOG_POST blog_id="3" post_id="1"/>
+    <JOIN_BLOG_POST blog_id="3" post_id="2"/>
+    <JOIN_BLOG_POST blog_id="1" post_id="3"/>
+
+    <post_rate id="1" account_id="1" item_id="1" rate="1" version="0"/>
+    <post_rate id="2" account_id="1" item_id="2" rate="1" version="0"/>
+    <post_rate id="3" account_id="2" item_id="2" rate="1" version="0"/>
+
+    <post_relation id="1" account_id="1" item_id="1" version="0"/>
+    <post_relation id="2" account_id="1" item_id="2" version="0"/>
+    <post_relation id="3" account_id="2" item_id="2" version="0"/>
+
+    <comment id="1" account_id="1" text="Comment Text 1" post_id="2" rating="0" version="0"
+             date="2016-01-07 21:42:34" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+             no_of_rated_up="0"/>
+
+    <comment id="2" account_id="2" text="Comment Text 2" post_id="1" rating="0" version="0"
+             date="2016-01-07 21:42:34" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+             no_of_rated_up="0"/>
+
+    <comment id="3" account_id="1" text="Comment Text 3" post_id="1" rating="0" version="0"
+             date="2016-01-07 21:42:34" no_of_rated="0" no_of_subscribers="0" no_of_rated_down="0"
+             no_of_rated_up="0"/>
+
+    <comment_rate id="1" account_id="1" item_id="1" rate="1" date="2016-01-07 21:42:34" version="0"/>
+    <comment_rate id="2" account_id="1" item_id="2" rate="1" date="2016-01-07 21:42:34" version="0"/>
+    <comment_rate id="3" account_id="2" item_id="2" rate="1" date="2016-01-07 21:42:34" version="0"/>
+
+    <comment_relation id="1" account_id="1" item_id="1" date="2016-01-07 21:42:34" version="0"/>
+    <comment_relation id="2" account_id="1" item_id="2" date="2016-01-07 21:42:34" version="0"/>
+    <comment_relation id="3" account_id="2" item_id="2" date="2016-01-07 21:42:34" version="0"/>
+
+</dataset>
+
